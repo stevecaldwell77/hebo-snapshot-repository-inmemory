@@ -37,11 +37,10 @@ yarn add hebo-snapshot-repository-inmemory
 
 ```js
 const HeboSnapshotRepositoryInmemory = require('hebo-snapshot-repository-inmemory');
-
-const heboSnapshotRepositoryInmemory = new HeboSnapshotRepositoryInmemory();
-
-console.log(heboSnapshotRepositoryInmemory.renderName());
-// script
+const aggregateNames = ['library', 'book', 'author'];
+const snapshotRepository = new HeboSnapshotRepositoryInmemory({
+    aggregates: aggregateNames
+});
 ```
 
 
