@@ -21,7 +21,6 @@
   ],
   "dependencies": {
     "auto-bind": "^1.2.1",
-    "hebo": "^0.3.3",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
@@ -35,6 +34,7 @@
     "eslint-config-xo-lass": "latest",
     "eslint-plugin-prettier": "latest",
     "fixpack": "latest",
+    "hebo": "^0.3.3",
     "husky": "latest",
     "lint-staged": "latest",
     "nyc": "latest",
