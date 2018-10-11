@@ -1,6 +1,6 @@
 const test = require('ava');
 const shortid = require('shortid');
-const { validateSnapshotRepository } = require('hebo/validators');
+const { validateSnapshotRepository } = require('hebo-validation');
 const SnapshotRepositoryInmemory = require('..');
 
 test('passes validator', t => {
