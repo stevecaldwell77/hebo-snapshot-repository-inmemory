@@ -24,13 +24,11 @@ class SnapshotRepositoryInmemory {
         );
     }
 
-    // eslint-disable-next-line require-await
     async getSnapshot(aggregateName, aggregateId) {
         this.assertValidAggregate('getSnapshot', aggregateName);
         return this.aggregates[aggregateName][aggregateId];
     }
 
-    // eslint-disable-next-line require-await
     async writeSnapshot(aggregateName, aggregateId, snapshot) {
         this.assertValidAggregate('writeSnapshot', aggregateName);
         this.aggregates[aggregateName][aggregateId] = snapshot;

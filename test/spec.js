@@ -18,7 +18,7 @@ test('writeSnapshot(), getSnapshot()', async t => {
 
     const bookId = shortid.generate();
 
-    t.deepEqual(
+    t.is(
         await repo.getSnapshot('book', bookId),
         undefined,
         'getSnapshot returns undefined if no snapshot exists',
@@ -44,13 +44,13 @@ test('writeSnapshot(), getSnapshot()', async t => {
         'getSnapshot() finds snapshot stored by writeSnapshot()',
     );
 
-    t.deepEqual(
+    t.is(
         await repo.getSnapshot('book', shortid.generate()),
         undefined,
         'getSnapshot() respects aggregate ID',
     );
 
-    t.deepEqual(
+    t.is(
         await repo.getSnapshot('author', bookId),
         undefined,
         'getSnapshot() respects aggregate name',
