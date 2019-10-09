@@ -32,7 +32,7 @@
     "eslint": "^6.5.1",
     "eslint-config-archereducation": "^4.3.1",
     "fixpack": "^2.3.1",
-    "hebo-validation": "^4.1.0",
+    "hebo-validation": "^5.0.0",
     "husky": "^1.1.1",
     "lint-staged": "^7.3.0",
     "nyc": "^13.0.1",
